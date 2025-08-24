@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/progra2.iml" filepath="$PROJECT_DIR$/.idea/progra2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-clase2/progra2-clase2.iml" filepath="$PROJECT_DIR$/progra2-clase2/progra2-clase2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-ejercicios1/progra2-ejercicios1.iml" filepath="$PROJECT_DIR$/progra2-ejercicios1/progra2-ejercicios1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-ejercicios2/progra2-ejercicios2.iml" filepath="$PROJECT_DIR$/progra2-ejercicios2/progra2-ejercicios2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-ejercicios3/progra2-ejercicios3.iml" filepath="$PROJECT_DIR$/progra2-ejercicios3/progra2-ejercicios3.iml" />
+    </modules>
+  </component>
+</project>
