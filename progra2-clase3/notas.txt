@@ -1,0 +1,41 @@
+definición de TDA: especificación
+todas las estructuras que vamos a ver son TDA
+el usuario tiene que saber cómo funciona la estructura y lo que necesita, entonces puede abstraerse de los datos
+
+estructura 1: lista
+hace referencia a otros objetos a traves de enlaces
+almacenan dirección en memoria de un objeto
+la lista es un cuadradito con una referencia a otro cuadradito
+
+clase nodo: tiene un elemento y el elemento siguiente. lo usamos para las listas
+guarda un valor y una referencia.
+el valor de lo que lo que vale el cuadradito y la referencia del elemtno que sigue. el último tiene referencia null a futuro
+es más costoso, puede crecer infinitamente mientras tenga espacio en la compu
+es una estructura dinámica a comparación de los arreglos que son estáticos
+
+para hacer una lista necesito identificar el primer valor.
+para eliminar, agregar o whatever no me afecta para el valor de la cajita. solo nos importa el comportamiento
+
+voy a querer recorrer la lista, para eso tengo que ver como me las arreglo
+NO LE PUEDO DAR AL USUARIO ACCESO A LOS VALORES, PERO NO PUEDO DARLE DATOS SOBRE LOS NODOS
+el usuario no sabe que es un nodo, pero si sabe lo que guardó en la lista
+hay que guardar una referencia al nodo en el que está parado el usuario
+
+para crear un nuevo nodo al principio asigno el nuevo nodo al head y elimino la anterior referencia de head
+
+poner en el primer:
+guardo el valor, el puntero actual head y la cantidad++
+
+poner en el ultimo:
+guardar el valor, crear var aux para recorrer mientras la REFERENCIA sea /= a null, cuando llego al final le asigno como referencia a ese nodo la referencia de mi nuevo nodo y el nuevo nodo queda referencia null, cantidad++
+hay casos border como querer agregar un elemtno al final cuando la lista no está inicializada, para eso lo atajo con un if
+traza: dibujar la instrucción
+
+para eliminar el primero:
+le pido que ahora head= head.sig
+uso un auxiliar para asignarle a head la referencia siguiente null
+si la lista está vacía me va a romper, entonces agrego un if si cant=0 para validar primero, si no puedo hacer nada depende
+
+crear interfaces para definir qué cosas hace una lsita - TDA
+"quiero crear una estructura que opere con nodos enlazados", creo una interface con lo que necsito y después las implemento en las listas que quiero.
+en los parciales NO usar estructuras de java, solo las creadas por nosotros.
