@@ -30,11 +30,52 @@ public class TempMinEstacion extends LinkedList<Float>{
         if (getHead() != null){
             float suma = 0;
             Node<Float> aux = getHead();
-            while (aux.getNext() != null){
+            while (aux != null){
                 suma+=aux.getData();
                 aux = aux.getNext();
-            } suma+=aux.getData(); // agrego uno al finalizar para que tome todos los casos
-            promedio = suma/this.getQuantity();
+            } promedio = suma/this.getQuantity();
         } return promedio;
     }
+
+    public int cantHeladas(){
+        int cantHeladas = 0;
+        Node<Float> aux = getHead();
+        while (aux != null){
+            if (aux.getData() <= 0){
+                cantHeladas++;
+            }
+            aux = aux.getNext();
+        }  return cantHeladas;
+    }
+
+    public boolean huboHeladas(){
+        if (cantHeladas()>0){
+            return true;
+        } else return false;
+    }
+
+    public float primeroMayor(float t){
+        Node<Float> aux = getHead();
+        while (aux != null){
+            if (aux.getData() > t){
+                return aux.getData();
+            }
+            aux = aux.getNext();
+        } return t;
+    }
+
+    public boolean ordenadoCreciente(){
+        if (getHead() != null){
+            Node<Float> aux = getHead();
+            while (aux.getNext() != null){
+                if (aux.getData() > (Float) aux.getNext().getData()){ // agregue el (Float) porque sino me compara con un object
+                    return false;
+                }
+                aux = aux.getNext();
+            } return true;
+        } else throw new NullPointerException("No hay elementos en la lista para determinar si está ordenada");
+
+    }
+
+
 }
