@@ -7,13 +7,15 @@ public class Main {
         TempMinEstacion estacion3 = new TempMinEstacion();
         TempMinEstacion estacion4 = new TempMinEstacion();
 
+        estacion1.establecerTempMin(1.7F);
         estacion1.establecerTempMin(1.5F);
         estacion1.establecerTempMin(3.5F);
-        estacion1.establecerTempMin(1.7F);
+        estacion1.establecerTempMin(33F);
 
         estacion2.establecerTempMin(-10F);
         estacion2.establecerTempMin(0F);
         estacion2.establecerTempMin(10F);
+        estacion2.establecerTempMin(33F);
 
         estacion4.establecerTempMin(1F);
 
@@ -76,6 +78,70 @@ public class Main {
         }
 
 
+        try {
+            System.out.println(estacion1.menorTemperatura());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        try {
+            System.out.println(estacion3.menorTemperatura());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        try {
+            System.out.println(estacion4.menorTemperatura());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        try {
+            System.out.println(estacion1.posMenorTemperatura());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        try {
+            System.out.println(estacion2.posMenorTemperatura());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        try {
+            System.out.println(estacion3.posMenorTemperatura());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        try {
+            System.out.println(estacion4.posMenorTemperatura());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        System.out.println(estacion1.todosPositivos());
+        System.out.println(estacion2.todosPositivos());
+        System.out.println(estacion3.todosPositivos());
+        System.out.println(estacion4.todosPositivos());
+
+        System.out.println(estacion1.contarCoincidencias(estacion2));
+        System.out.println(estacion1.contarCoincidencias(estacion1));
+        System.out.println(estacion1.contarCoincidencias(estacion3));
+
+        System.out.println(estacion1);
+        System.out.println(estacion1.invertir().toString());
+
+        System.out.println(estacion1);
+        estacion1.reemplazar(1.7F,2.7F);
+        System.out.println(estacion1);
+
+        System.out.println(estacion1);
+        estacion1.reemplazar(7.7F,2.7F);
+        System.out.println(estacion1);
+
+        System.out.println(estacion3);
+        estacion1.reemplazar(7.7F,2.7F);
+        System.out.println(estacion3);
+
+        System.out.println(estacion1);
+        estacion1.invertirMe();
+        System.out.println(estacion1);
 
     }
 }

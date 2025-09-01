@@ -10,8 +10,7 @@ public class LinkedList <T>{
         this.quantity = 0;
     }
 
-    // add node - nodes are added at the end by default as is not relevant for this exercise
-    public void addValue(T value){
+    public void addValueEnd(T value){
         Node<T> newNode = new Node(value); // creating new node with value T so we can create different instances with different values
         if (head == null){
             head = newNode;
@@ -25,11 +24,33 @@ public class LinkedList <T>{
         quantity++; // at end since there is no case where node cannot be added
     }
 
+    public void addValueStart(T value){
+        Node<T> newNode = new Node(value);
+        newNode.setNext(head);
+        head = newNode;
+        quantity++;
+    }
+
+
     // getters and setters
     public int getQuantity(){
         return quantity;
     }
     public  Node getHead(){
         return head;
+    }
+    public void setHead(Node head){
+        this.head = head;
+    }
+
+    // to string un poco inventado
+    @Override
+    public String toString() {
+        String res = "";
+        Node<T> aux = this.head;
+        while (aux != null){
+            res+= aux.getData()+", ";
+            aux=aux.getNext();
+        } return res;
     }
 }
