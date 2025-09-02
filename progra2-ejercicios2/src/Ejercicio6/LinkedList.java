@@ -1,5 +1,7 @@
 package Ejercicio6;
 
+// ESTÁ MAL: TUVE QUE HACER UNA INTERFACE Y QUE LUEGO TEMP MIN IMPLEMENTE LA INTERFACE
+
 public class LinkedList <T>{
     private Node head;
     private int quantity;

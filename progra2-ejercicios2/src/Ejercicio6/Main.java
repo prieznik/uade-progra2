@@ -1,5 +1,7 @@
 package Ejercicio6;
 
+// hacer corrección de todo
+
 public class Main {
     public static void main(String[] args) {
         TempMinEstacion estacion1 = new TempMinEstacion();

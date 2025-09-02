@@ -1,6 +1,6 @@
 package Ejercicio6;
 
-import Ejercicio5.TemperaturaEstacion;
+// HACER DE NUEVO EN BASE A INTERFACE
 
 // dejo esta clase en espanol por motivos practicos, ya que hice los demas puntos en espanol
 public class TempMinEstacion extends LinkedList<Float>{
