@@ -1,0 +1,25 @@
+PILA - es un TDA
+- apilar, uno encima de otro, como los legos
+- puedo desarmarla para acceder a un elemento
+- tengo que poder: (especificación de la TDA)
+    - saber cual es el tope
+    - agregar un elemento
+    - desapilar
+    - eliminar un elemento
+- en programación solo puedo ver el primer elemento de una pila
+- implementación: tiene dos atributos (E (parametrizable), size)
+- para eliminar un elemento hago size -1
+- para agregar un elemento hago size +1
+- la pila está hecha con un array, el array es estático, qué pasa si la pila está llena?
+    puedo dar un menasje de error, diciendo que no tiene espaico
+    o crear un nuevo arreglo y unificarlo (ESTO LO HACE JAVA POR DEFAULT)
+- SIZE 3 corresponde al indice del proximo vacio, o sea tengo 0,1,2
+- o sea yo creo una pila STACK como interface, después creo ArrayStack por ejemplo
+- puedo crear también una LinkedStack: es una linkedlist restringida
+
+
+
+
+COLA
+- una fila, tengo que esperar mi turno, como en el super
+- cuando saco o agrego siempre es al final, no puedo agregar en lugares random, no me puedo colar
