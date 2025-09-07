@@ -23,3 +23,14 @@ PILA - es un TDA
 COLA
 - una fila, tengo que esperar mi turno, como en el super
 - cuando saco o agrego siempre es al final, no puedo agregar en lugares random, no me puedo colar
+PROBLEMA: por más que saque un elemento, el array sigue lleno
+SOLUCIÓN: arreglo circular
+la cola solo saca el primero que entró, como una cola real, nunca puedo sacar desde el último
+
+
+
+
+
+
+
+en general existen dos tipos de implementaciones: estáticas y dinámicas(nodos enlazados)

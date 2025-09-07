@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/progra2.iml" filepath="$PROJECT_DIR$/.idea/progra2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/progra2-clase-pilas/progra2-clase-pilas.iml" filepath="$PROJECT_DIR$/progra2-clase-pilas/progra2-clase-pilas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/progra2-clase2/progra2-clase2.iml" filepath="$PROJECT_DIR$/progra2-clase2/progra2-clase2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/progra2-clase3/progra2-clase3.iml" filepath="$PROJECT_DIR$/progra2-clase3/progra2-clase3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-clases/progra2-clase-pilas/progra2-clase-pilas.iml" filepath="$PROJECT_DIR$/progra2-clases/progra2-clase-pilas/progra2-clase-pilas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-clases/progra2-clase2/progra2-clase2.iml" filepath="$PROJECT_DIR$/progra2-clases/progra2-clase2/progra2-clase2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-clases/progra2-clase3/progra2-clase3.iml" filepath="$PROJECT_DIR$/progra2-clases/progra2-clase3/progra2-clase3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-clases/progra2-clases.iml" filepath="$PROJECT_DIR$/progra2-clases/progra2-clases.iml" />
       <module fileurl="file://$PROJECT_DIR$/progra2-ejercicios1/progra2-ejercicios1.iml" filepath="$PROJECT_DIR$/progra2-ejercicios1/progra2-ejercicios1.iml" />
       <module fileurl="file://$PROJECT_DIR$/progra2-ejercicios2/progra2-ejercicios2.iml" filepath="$PROJECT_DIR$/progra2-ejercicios2/progra2-ejercicios2.iml" />
       <module fileurl="file://$PROJECT_DIR$/progra2-ejercicios3/progra2-ejercicios3.iml" filepath="$PROJECT_DIR$/progra2-ejercicios3/progra2-ejercicios3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progra2-practicas/progra2-practicas.iml" filepath="$PROJECT_DIR$/progra2-practicas/progra2-practicas.iml" />
     </modules>
   </component>
 </project>
